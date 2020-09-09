@@ -1,0 +1,12 @@
+.filter{background-color: RGB(68, 184, 172) ;display: flex;align-content: center;height: 120px;
+    align-items: center;}
+.filter input{height: 40px;width: 300px; margin-right: 200px;margin-bottom: 0px}
+    button{
+        background-color:transparent;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        height: 45px;
+        outline:none;margin-left:80px;
+     }
+     .fa-plus-circle{color: white;margin-left: 150px;margin-right: 200px;}

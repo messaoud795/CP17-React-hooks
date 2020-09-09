@@ -1,0 +1,16 @@
+input{height: 35px;margin-left: 20px;margin-bottom: 20px;width: 600px;}
+.label {margin-left: 20px;width: 100px;    display:inline-block}
+h2{color: rgba(0, 128, 0, 0.623);}
+
+#newmovie{display: none;  z-index: 9; position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);background-color: rgb(128, 128, 128);
+    padding:40px; width: auto; box-shadow: -2px 29px 27px -3px rgba(0,0,0,0.52);
+}
+
+#description{width: 600px;}
+#posterurl{width: 600px;}
+#title1{width: 600px;}
+#sent{width: 90px; background-color: rgba(47, 78, 255, 0.329);border: black 2px solid;height: 30px;}
+#exit{width: 90px; background-color:rgb(255, 238, 0);border: black 2px solid;font-size: 15px;height: 30px;}
