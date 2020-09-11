@@ -25,7 +25,7 @@ useEffect(()=> {
     return(
        
         <div className='filter' >
-           <button  id='add'onClick={openformulaire}> <FontAwesomeIcon icon={faPlusCircle} /> </button>
+           <button  classname='add'id='add'onClick={openformulaire}> <FontAwesomeIcon icon={faPlusCircle} /> </button>
             <input type="search" placeholder="search movies " onChange={searchchange} />
             <Rating  handlerate={handlerate} id='filterrate' />
             

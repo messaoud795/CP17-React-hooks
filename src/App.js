@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
-import MovieList from "./MovieList";
+import {MovieList} from "./MovieList";
 import Filter from "./Filter";
 import NewMovie from "./NewMovie";
+import { Link } from "react-router-dom";
+
 
 function App() {
   // initialize the state of movies
-  var [movies, setmovies] = useState(MovieList());
+  var [movies, setmovies] = useState(MovieList);
   //get and set the rate state
   var [rate, setrate]=useState(null);
 
@@ -22,7 +24,7 @@ function App() {
         item.title.toLowerCase().includes(searchfield.toLowerCase()) 
       );
     }
-    var filteredmovies = MovieList().filter(test1);
+    var filteredmovies = MovieList.filter(test1);
     //assign the new movies list to the state movies
     setmovies(filteredmovies);
   }
@@ -52,18 +54,25 @@ function passRateToParent(newrate) {
 }
 var openform=document.getElementById('newmovie');
 
+function reply_click()
+{console.log(document.getElementById('card'))
+}
   return (
     <div className="App">
+      <Link to="/">
+        <div>
       <Filter searchchange={onsearchchange}  passRateToParent={passRateToParent} openform={openform}/>
 
       <NewMovie handlesubmit={handlesubmit} />
       <div className="listmovies">
         {rate ? movies.filter(movie=>movie.rate>= rate).map((movie) => (
-          <MovieCard Movie={movie}></MovieCard>
+          <MovieCard Movie={movie}  onClick={reply_click} ></MovieCard>
         )) : movies.filter(movie=>movie.rate>= rate).map((movie) => (
           <MovieCard Movie={movie}></MovieCard>
         ))}
       </div>
+    </div>
+      </Link>
     </div>
   );
 }

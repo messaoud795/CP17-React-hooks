@@ -1,5 +1,5 @@
 input{height: 35px;margin-left: 20px;margin-bottom: 20px;width: 600px;}
-.label {margin-left: 20px;width: 100px;    display:inline-block}
+.label {margin-left: 20px;width: 100px;  display:inline-block}
 h2{color: rgba(0, 128, 0, 0.623);}
 
 #newmovie{display: none;  z-index: 9; position: absolute;

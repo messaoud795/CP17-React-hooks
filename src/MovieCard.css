@@ -4,10 +4,14 @@
     color: white;
    height: 60px;justify-content: space-between;padding: 4px;
 }
-.card{width:200px;height: 310px;  transition: 0.3s;margin:50px 40px 40px 80px }
-.card:hover {transform: scale(1.1); box-shadow: -2px 29px 27px -3px rgba(0,0,0,0.52);}
+#card{width:200px;height: 310px;  transition: 0.3s;margin:50px 40px 40px 80px; cursor: pointer; }
+#card:hover {transform: scale(1.1); box-shadow: -2px 29px 27px -3px rgba(0,0,0,0.52);}
 .moviepic{width: 200px;height: 260px;}
 #title{font-weight: bold;text-align: left; width: 120px;}
-.description{font-size: small;text-align:left;display: none;z-index: 99999;background-color: black;color: white;}
+.description{
+    font-size: small;text-align:left;display: none;z-index: 99999;background-color: black;color: white;}
 .moviepic:hover+.description{display: block;}   
 .rating{width: 73px;}
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
